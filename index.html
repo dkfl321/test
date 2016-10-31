@@ -16,14 +16,34 @@
 			padding: 0;
 		}
 		h1{
-			transition: 0.3s all;
+			cursor: default;
+			color: #4861cd;
+			transition: 0.5s all;
+			text-shadow: 1px 1px 2px black;
 		}
 		h1:hover{
-			color: green;
+			color: #fff;
+		}
+
+		.is_overlay {
+		  position: fixed;
+		  right: 0;
+		  bottom: 0;
+		  min-width: 100%;
+		  min-height: 100%;
+		  width: auto;
+		  height: auto;
+		  z-index: -9999;
 		}
 	</style>
 </head>
 <body>
+<div class="is_overlay">
+    <video class="is_overlay" autoplay="" loop="" poster="https://dl.dropboxusercontent.com/u/23834858/videos/bck.jpg">
+      <source src="https://dl.dropboxusercontent.com/u/23834858/videos/WD0221.mp4.mp4" type="video/mp4">
+      <source src="https://dl.dropboxusercontent.com/u/23834858/videos/WD0221.webmsd.webm" type="video/webm">
+  	</video>
+</div>
 	<h1 style="font-size: 60px;">TEST</h1>
 </body>
 </html>
